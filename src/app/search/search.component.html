@@ -1,0 +1,9 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<div class="rollno">
+    <div class="form-group">
+        <label for="rollnumber">Registration Number:</label>
+        <input type="text" name="rollnumber" [(ngModel)]="marks.rollnumber" class="form-control"  id="rollnumber" placeholder="Please enter Roll Number" required>
+        <button type="submit" style="float: right;margin-top: 15px;" (click)="onSearch()" class="btn btn-primary">Search</button>
+    </div>
+</div>  

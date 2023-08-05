@@ -1,0 +1,80 @@
+<app-adminheader></app-adminheader>
+<app-adminnavbar></app-adminnavbar>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="rollno">
+        <div class="form-group">
+            <label for="rollnumber">Registration Number:</label>
+            <input type="text" name="rollnumber" [(ngModel)]="marks.rollnumber" class="form-control" name="rollno" id="rollnumber" placeholder="Please enter Roll Number" required>
+            <button type="submit" style="float: right;margin-top: 15px;" (click)="onSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+    </div>  
+    <div class="marks">
+        <h3>Enter Marks of {{this.responsedata}}</h3>
+        <table>
+            <tr>
+              <th>S.No</th>
+              <th>Subject Code</th>
+              <th>Subject Name</th>
+              <th>Marks</th>            
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>R2021051</td>
+              <td>OBJECT ORIENTED PROGRAMMING THROUGH C++</td>
+              <td><input type="text" name="oops" [(ngModel)]="marks.oops" width="10px"></td>
+              
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>R2021052</td>
+              <td>OPERATING SYSTEMS	</td>
+              <td><input type="text" name="os" [(ngModel)]="marks.os" width="10px"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>R2021053</td>
+              <td>SOFTWARE ENGINEERING</td>
+              <td><input type="text" name="se" [(ngModel)]="marks.se" width="10px"></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>R2021054</td>
+              <td>MATHEMATICAL FOUNDATIONS OF COMPUTER SCIENCE</td>
+              <td><input type="text" name="mfcs" [(ngModel)]="marks.mfcs" width="10px"></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>R2021055</td>
+              <td>OBJECT ORIENTED PROGRAMMING THROUGH C++	LAB</td>
+              <td><input type="text" name="oopslab" [(ngModel)]="marks.oopslab" width="10px"></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>R2021056</td>
+              <td>OPERATING SYSTEMS LAB</td>
+              <td><input type="text" name="oslab" [(ngModel)]="marks.oslab" width="10px"></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>R2021057</td>
+              <td>SOFTWARE ENGINEERING LAB</td>
+              <td><input type="text" name="selab" [(ngModel)]="marks.selab" width="10px"></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>R2021058</td>
+              <td>APPLICATIONS OF PYTHON-NUMPY(SKILL ORIENTED)</td>
+              <td><input type="text" name="numpy" [(ngModel)]="marks.numpy" width="10px"></td>
+            </tr>
+          </table>
+    </div>
+      <p align="center"><button type="submit" style="margin-top: 15px;" (click)="onUpload()" class="btn btn-primary">Upload</button></p>
+</body>
+</html>

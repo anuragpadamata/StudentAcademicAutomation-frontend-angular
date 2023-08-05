@@ -1,0 +1,88 @@
+<app-search ></app-search>
+
+<h1 style="text-align: center;">Results of <span>{{marksdata.rollnumber}}</span> </h1>
+
+<div class="marks" >
+    
+    <table>
+        <tr>
+          <th>S.No</th>
+          <th>Subject Code</th>
+          <th>Subject Name</th>
+          <th>Marks</th>            
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>R2021051</td>
+          <td>OBJECT ORIENTED PROGRAMMING THROUGH C++</td>
+          <td>{{marksdata.oops}}</td>
+          
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>R2021052</td>
+          <td>OPERATING SYSTEMS	</td>
+          <td>{{marksdata.os}}</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>R2021053</td>
+          <td>SOFTWARE ENGINEERING</td>
+          <td>{{marksdata.se}}</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>R2021054</td>
+          <td>MATHEMATICAL FOUNDATIONS OF COMPUTER SCIENCE</td>
+          <td>{{marksdata.mfcs}}</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>R2021055</td>
+          <td>OBJECT ORIENTED PROGRAMMING THROUGH C++	LAB</td>
+          <td>{{marksdata.oopslab}}</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>R2021056</td>
+          <td>OPERATING SYSTEMS LAB</td>
+          <td>{{marksdata.oslab}}</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>R2021057</td>
+          <td>SOFTWARE ENGINEERING LAB</td>
+          <td>{{marksdata.selab}}</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>R2021058</td>
+          <td>APPLICATIONS OF PYTHON-NUMPY(SKILL ORIENTED)</td>
+          <td>{{marksdata.numpy}}</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td></td>
+        <td></td>
+        
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>TOTAL</td>
+          <td></td>
+        
+          <td>{{total}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>AVERAGE</td>
+          <td></td>
+         
+          <td>{{average}}</td>
+        </tr>
+        
+      </table>
+      
+</div>
+<p align="center"><button type="submit" style="margin-top: 15px;" (click)="onPrint()" class="btn btn-primary">Print</button></p>

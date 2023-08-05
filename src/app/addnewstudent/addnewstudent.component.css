@@ -1,0 +1,13 @@
+.response{
+    position: relative;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    
+}
+.response h4{
+    text-align: center;
+    color: #4BB543;
+    font-family: 'Times New Roman', Times, serif;
+
+}

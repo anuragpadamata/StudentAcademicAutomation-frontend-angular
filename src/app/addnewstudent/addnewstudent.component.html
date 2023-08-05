@@ -1,0 +1,101 @@
+<app-adminheader></app-adminheader>
+<app-adminnavbar></app-adminnavbar>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head> 
+<body>
+    <div class="container mt-5">
+        <h2>New Student Details</h2>        
+        <div class="form-group">
+            <label for="rollnumber">Registration Number:</label>
+            <input type="text" name="rollnumber" [(ngModel)]="student.rollnumber" class="form-control" name="rollno" id="rollnumber" placeholder="Please enter Roll Number" required>
+        </div>
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" name="fullname" [(ngModel)]="student.name" class="form-control" name="name" id="fullName" placeholder="Please enter full name" required>
+        </div>   
+        <div class="form-group">
+            <label for="dob">DOB:</label>
+            <input type="date" name="dob" [(ngModel)]="student.dob" class="form-control" name="dob" id="dob" placeholder="Please enter dob" required>
+        </div> 
+        <div class="form-group">
+            <label for="year">Year</label>
+            <select class="form-control" name="year" [(ngModel)]="student.year" id="year">
+                <option value="">Select Year</option>
+                <option value="I">I</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>                       
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="branch">Branch:</label>
+            <select name="branch" [(ngModel)]="student.branch" class="form-control" id="branch">
+                <option value="">Select Branch</option>
+                <option value="CSE">Computer Science Engineering</option>
+                <option value="CSM">CSM (AI&ML)</option>
+                <option value="IT">Information Technology</option>
+                <option value="ECE">Electronics Communication Engineering</option>
+                <option value="EEE">Electrical and Electronic Engineering</option>
+                <option value="MECHANICAL">Mechanical Engineering</option>
+                <option value="CIVIL">Civil Engineering</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="rollnumber">Phone Number:</label>
+            <input type="text" name="rollnumber" [(ngModel)]="student.phonenumber" class="form-control" name="rollno" id="rollnumber" placeholder="Please enter Phone Number" required>
+        </div>
+        <div class="form-group">
+            <label for="rollnumber">Email Id:</label>
+            <input type="text" name="rollnumber" [(ngModel)]="student.emailid" class="form-control" name="rollno" id="rollnumber" placeholder="Please enter Email Id" required>
+        </div>
+        <div class="form-group">
+            <label for="image">Student Image:</label>
+            <br>
+            <input type="file" name="studentimage" (change)="onFileChange($event)" class="" name="image" id="image" placeholder="Please select image" required>
+        </div>
+        <div class="response">
+           <h4> {{this.responsedata}}</h4>
+        </div>
+        <!-- Add Bootstrap JS and jQuery links -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Add more fields as needed -->
+        <button type="submit" (click)="onRegister()" class="btn btn-primary">Register</button>
+    </div>
+</body>
+</html>
+
+
+           
+                
+                
+                
+                
+
+
+
+                
+
+
+
+
+                
+                
+    
+               
+           
+       
+            
+           
+
+            
+        
+    
+
+   
